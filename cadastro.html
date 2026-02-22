@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | LojasBrincos</title>
+
+  <!-- W3CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body style="background-color:#111111;">
+
+  <!-- Título -->
+  <h1 class="w3-center" style="color: white; margin-top: 40px;">
+    Cadastro de colaboradores
+  </h1>
+
+  <!-- Formulário -->
+  <form
+    method="post"
+    action="processaCadastro.php"
+    class="w3-card w3-white w3-round-large w3-padding"
+    style="max-width: 400px; margin: 30px auto;"
+  >
+
+    <p>
+      Nome Completo:
+      <input class="w3-input w3-padding-16" type="text" name="nome" placeholder="Nome completo" required>
+    </p>
+
+    <p>
+      Idade:
+      <input class="w3-input w3-padding-16" type="number" name="idade" placeholder="Ex: 18" required>
+    </p>
+
+    <p>
+      Profissão:
+      <input class="w3-input w3-padding-16" type="text" name="profi" placeholder="Profissão" required>
+    </p>
+
+    <p>
+      Salário pretendido:
+      <input class="w3-input w3-padding-16" type="text" name="sal" placeholder="Ex: 1500" required>
+    </p>
+
+    <p>
+      Experiência anterior:
+      <textarea
+        class="w3-input w3-padding-16"
+        name="ex"
+        rows="4"
+        placeholder="Digite aqui sua experiência anterior"
+        required
+      ></textarea>
+    </p>
+
+    <p>
+      <button class="w3-button w3-black w3-block w3-round" type="submit">
+        Enviar
+      </button>
+    </p>
+
+  </form>
+
+</body>
+</html>

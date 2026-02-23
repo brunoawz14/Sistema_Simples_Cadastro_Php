@@ -5,7 +5,15 @@
     <title>Cadastro Feito</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body style="background-color:#111111;">
+<body style="background-color:#111111;" class="w3-display-container fundo">
+    <style>
+    .fundo {
+      background-image: url(img/fundo\ cadastro.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {

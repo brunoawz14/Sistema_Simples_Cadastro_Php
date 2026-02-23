@@ -12,7 +12,7 @@
 <body style="background-color:#111111; "class="w3-display-container fundo">
   <style>
     .fundo {
-      background-image: url(img/fundo\ cadastro.png);
+      background-image: url("https://foldr.space/d/fundo%20cadastro.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -26,12 +26,12 @@
 
   <!-- Formulário -->
   <form
-    method="post"
+    method="POST"
     action="processaCadastro.php"
     class="w3-card w3-white w3-round-large w3-padding"
     style="max-width: 400px; margin: 30px auto;"
   >
-
+<!--Requisitos do formulario-->
     <p>
       Nome Completo:
       <input class="w3-input w3-padding-16" type="text" name="nome" placeholder="Nome completo" required>
@@ -62,13 +62,20 @@
         required
       ></textarea>
     </p>
-
+<!--Botão Post-->
     <p>
-      <button class="w3-button w3-black w3-block w3-round" type="submit">
+      <button type="submit" format="POST" class="w3-button w3-black w3-block w3-round">
         Enviar
       </button>
     </p>
-
+    <p>
+      <!--Botão Get-->
+    <button 
+  type="submit"
+  formmethod="GET"
+  class="w3-button w3-border w3-round w3-margin-top"> Testar envio (GET)
+    </button>
+</p>
   </form>
 
 </body>
